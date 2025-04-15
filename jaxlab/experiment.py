@@ -34,8 +34,6 @@ for num in num_envs:
     sps = config["NUM_STEPS"] * config["NUM_ENVS"] / total_time
     jaxmarl_sps.append(sps)
 
-    print(f"JaxMARL, Num Envs: {num}, Total Time (s): {total_time}")
-    print(
-        f"JaxMARL, Num Envs: {num}, Total Steps: {config['NUM_STEPS'] * config['NUM_ENVS']}"
-    )
-    print(f"JaxMARL, Num Envs: {num}, SPS: {sps}")
+    print(f"Num Envs: {num}, Total Time (s): {total_time}")
+    print(f"Num Envs: {num}, Total Steps: {config['NUM_STEPS'] * config['NUM_ENVS']}")
+    print(f"Num Envs: {num}, SPS: {sps}")
